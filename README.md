@@ -17,7 +17,7 @@
 
 # Usage:
 1. You could download one by one music witch means you put only link for one video 
-    > python dl_misic.py 
+    > python dl_music.py 
     
     * and then past the link of the video
 2. You could download a complete playlist:

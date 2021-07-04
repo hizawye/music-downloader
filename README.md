@@ -9,7 +9,7 @@ $bash setup.sh
     $pkg install python
     $pip install youtube-dl 
 
-#Usage:
+# Usage:
 1-You could download one by one music witch means you put only link for one video 
 $python dl_misic.py
 and then past the link of the video

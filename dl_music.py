@@ -15,13 +15,13 @@ def downl(vurl):
         ],
         'prefer_ffmpeg': True,
         'keepvideo': False,
-        'outtmpl':'/sdcard/music/%(title)s.%(ext)s'
+        'outtmpl':f'{os.getcwd()}/%(title)s.%(ext)s'
     }
 
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([str(vurl)])
 def files():
-    arr = os.listdir('/sdcard/music/')
+    arr = os.listdir(f'{os.getcwd()}/music/')
     def loop():
         for i in arr:
             yield i[:-4]
